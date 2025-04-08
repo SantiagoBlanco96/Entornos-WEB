@@ -1,0 +1,54 @@
+body {
+    background-color: #f5f5dc;
+    font-family: Georgia, serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+	font-size: 40px;
+	font-style: italic;
+    margin-bottom: 55px;
+}
+
+.noticia {
+    border-bottom: solid 1px grey;
+    margin: 10px;
+    line-height: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.politica {
+    background-color: #ffdddd;
+}
+
+.deportes {
+    background-color: #ddffdd;
+}
+
+.tecnologia {
+    background-color: #ddeeff;
+}
+
+.cultura {
+    background-color: #fff3cd;
+}
+
+.titulo {
+    font-size: 22px;
+}
+
+.bajada {
+    font-size: 14px;
+    font-style: italic;
+    color: grey;
+}
+
+.parrafo {
+    font-size: 12px;
+}
+
+.pie {
+    font-size: 12px;
+    font-weight: bold;
+}

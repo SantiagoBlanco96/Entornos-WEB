@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Pedido</title>
+</head>
+<body>
+    <h1>Formulario de Pedido</h1>
+	
+    <form action="accion.php" method="post">
+		
+		<fieldset>
+            <legend>Datos Envío</legend>
+            <p><label>Nombre: <input type="text" name="txtNombre" value="" required></label></p>
+            <p><label>Apellido: <input type="text" name="txtApellido" value="" required></label></p>
+			<p><label for="tipo_documento">Tipo de Documento:</label>
+				<select name="tipo_documento" required>
+					<option value="" disabled>Seleccionar...</option>
+					<option value="dni">DNI</option>
+					<option value="lc">LC</option>
+					<option value="le">LE</option>
+					<option value="pasaporte">PASAPORTE</option>
+				</select></p>
+			<p><label>nro Documento: <input type="text" name="txtTDocumento" value="" maxlength="8" required></label></p>
+            <p><label>Edad: <input type="number" name="txtEdad" value=""></label></p>
+            <p><label>Teléfono: <input type="tel" name="txtTelefono" value="" maxlength="20" required></label></p>
+            <p><label>Dirección: <input type="text" name="txtDireccion" value="" maxlength="20" required></label></p>
+			<p><label for="email">Email:</label><input type="email"  name="email" required></p>
+        </fieldset>
+              
+        <p><label>Sucursal: <select name="selSucursal">
+            <optgroup label="Rosario">
+               <option value="centro" selected>Centro</option>
+               <option value="sur">Sur</option>
+               <option value="norte">Norte</option>
+            </optgroup>
+            <optgroup label="Funes">
+               <option value="centro">Centro Funes</option>
+               <option value="damfield">Damfield</option>
+            </optgroup>
+        </select></label></p>
+		
+		<p><label>Componentes: <select name="selComponentes[]" required multiple size="5">
+            <option value="" disabled>Seleccionar...</option>
+            <option value="producto1">Producto 1</option>
+            <option value="producto2">Producto 2</option>
+            <option value="producto3">Producto 3</option>
+            <option value="producto4">Producto 4</option>
+            <option value="producto5">Producto 5</option>
+            <option value="producto6">Producto 6</option>
+            <option value="producto7">Producto 7</option>
+            <option value="producto8">Producto 8</option>
+        </select></label></p>
+        
+        <p><input type="reset" value="Reset"></p>
+
+        <p><input type="submit" name="btnEnviar" value="Enviar"></p>
+    </form>
+</body>
+</html>
