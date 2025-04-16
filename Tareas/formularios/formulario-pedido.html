@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Pedido</title>
+    <link rel="stylesheet" href="css/formulario-pedido.css">
 </head>
 <body>
     <h1>Formulario de Pedido</h1>
@@ -13,19 +15,24 @@
             <legend>Datos Envío</legend>
             <p><label>Nombre: <input type="text" name="txtNombre" value="" required></label></p>
             <p><label>Apellido: <input type="text" name="txtApellido" value="" required></label></p>
-			<p><label for="tipo_documento">Tipo de Documento:</label>
-				<select name="tipo_documento" required>
-					<option value="" disabled>Seleccionar...</option>
-					<option value="dni">DNI</option>
-					<option value="lc">LC</option>
-					<option value="le">LE</option>
-					<option value="pasaporte">PASAPORTE</option>
-				</select></p>
+            <p>
+                <label for="tipo_documento">Tipo de Documento:</label>
+                <select name="tipo_documento" id="tipo_documento" required>
+                    <option value="" disabled>Seleccionar...</option>
+                    <option value="dni">DNI</option>
+                    <option value="lc">LC</option>
+                    <option value="le">LE</option>
+                    <option value="pasaporte">PASAPORTE</option>
+                </select>
+            </p>
 			<p><label>nro Documento: <input type="text" name="txtTDocumento" value="" maxlength="8" required></label></p>
             <p><label>Edad: <input type="number" name="txtEdad" value=""></label></p>
             <p><label>Teléfono: <input type="tel" name="txtTelefono" value="" maxlength="20" required></label></p>
             <p><label>Dirección: <input type="text" name="txtDireccion" value="" maxlength="20" required></label></p>
-			<p><label for="email">Email:</label><input type="email"  name="email" required></p>
+			<p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </p>
         </fieldset>
               
         <p><label>Sucursal: <select name="selSucursal">

@@ -1,0 +1,158 @@
+/* Custom CSS for plantilla.html */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to replace Bootstrap's container */
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.header {
+    background-color: #3358f4;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-left {
+    float: left;
+    width: 50%;
+}
+
+.header-right {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.main-nav {
+    background-color: #2c4bcc;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    margin-right: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #f0f0f0;
+}
+
+.main-content {
+    padding: 40px 0;
+    min-height: 500px;
+}
+
+.content-left {
+    float: left;
+    width: 70%;
+    padding-right: 20px;
+}
+
+.content-right {
+    float: right;
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    clear: both;
+}
+
+.footer-left {
+    float: left;
+    width: 50%;
+}
+
+.footer-right {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Accessibility improvements */
+a:focus {
+    outline: 2px solid #ffbf00;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Social media icons */
+.social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.social-icons a:hover {
+    color: #f0f0f0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-left, .header-right, 
+    .content-left, .content-right,
+    .footer-left, .footer-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin: 5px 0;
+    }
+}
